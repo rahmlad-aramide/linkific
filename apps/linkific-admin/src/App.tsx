@@ -13,10 +13,6 @@ import { TaskList } from "./task/TaskList";
 import { TaskCreate } from "./task/TaskCreate";
 import { TaskEdit } from "./task/TaskEdit";
 import { TaskShow } from "./task/TaskShow";
-import { LinkificList } from "./linkific/LinkificList";
-import { LinkificCreate } from "./linkific/LinkificCreate";
-import { LinkificEdit } from "./linkific/LinkificEdit";
-import { LinkificShow } from "./linkific/LinkificShow";
 import { AuthList } from "./auth/AuthList";
 import { AuthCreate } from "./auth/AuthCreate";
 import { AuthEdit } from "./auth/AuthEdit";
@@ -60,13 +56,6 @@ const App = (): React.ReactElement => {
           edit={TaskEdit}
           create={TaskCreate}
           show={TaskShow}
-        />
-        <Resource
-          name="Linkific"
-          list={LinkificList}
-          edit={LinkificEdit}
-          create={LinkificCreate}
-          show={LinkificShow}
         />
         <Resource
           name="Auth"

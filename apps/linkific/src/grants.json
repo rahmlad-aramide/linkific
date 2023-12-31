@@ -1,5 +1,11 @@
 [
   {
+    "role": "todoUser",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
     "role": "user",
     "resource": "User",
     "action": "read:own",
@@ -27,6 +33,12 @@
     "role": "user",
     "resource": "User",
     "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "todoUser",
+    "resource": "User",
+    "action": "delete:any",
     "attributes": "*"
   },
   {
@@ -98,66 +110,6 @@
   {
     "role": "user",
     "resource": "Task",
-    "action": "read:any",
-    "attributes": "*"
-  },
-  {
-    "role": "todoUser",
-    "resource": "Linkific",
-    "action": "read:own",
-    "attributes": "*"
-  },
-  {
-    "role": "user",
-    "resource": "Linkific",
-    "action": "read:own",
-    "attributes": "*"
-  },
-  {
-    "role": "todoUser",
-    "resource": "Linkific",
-    "action": "create:any",
-    "attributes": "*"
-  },
-  {
-    "role": "user",
-    "resource": "Linkific",
-    "action": "create:any",
-    "attributes": "*"
-  },
-  {
-    "role": "todoUser",
-    "resource": "Linkific",
-    "action": "update:any",
-    "attributes": "*"
-  },
-  {
-    "role": "user",
-    "resource": "Linkific",
-    "action": "update:any",
-    "attributes": "*"
-  },
-  {
-    "role": "todoUser",
-    "resource": "Linkific",
-    "action": "delete:any",
-    "attributes": "*"
-  },
-  {
-    "role": "user",
-    "resource": "Linkific",
-    "action": "delete:any",
-    "attributes": "*"
-  },
-  {
-    "role": "todoUser",
-    "resource": "Linkific",
-    "action": "read:any",
-    "attributes": "*"
-  },
-  {
-    "role": "user",
-    "resource": "Linkific",
     "action": "read:any",
     "attributes": "*"
   },

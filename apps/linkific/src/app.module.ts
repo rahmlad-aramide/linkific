@@ -1,7 +1,6 @@
 import { Module } from "@nestjs/common";
 import { UserModule } from "./user/user.module";
 import { TaskModule } from "./task/task.module";
-import { LinkificModule } from "./linkific/linkific.module";
 import { AuthModule } from "./auth/auth.module";
 import { HealthModule } from "./health/health.module";
 import { PrismaModule } from "./prisma/prisma.module";
@@ -22,7 +21,6 @@ import { AuthModule } from "./auth/auth.module";
     AuthModule,
     UserModule,
     TaskModule,
-    LinkificModule,
     AuthModule,
     HealthModule,
     PrismaModule,

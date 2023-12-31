@@ -28,3 +28,17 @@ model Task {
   uidId     String   @unique @db.ObjectId
   updatedAt DateTime @updatedAt
 }
+
+model Linkific {
+  createdAt DateTime @default(now())
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  updatedAt DateTime @updatedAt
+}
+
+model Auth {
+  createdAt DateTime @default(now())
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  password  String?
+  updatedAt DateTime @updatedAt
+  username  String   @unique
+}

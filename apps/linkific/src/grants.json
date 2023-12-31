@@ -1,5 +1,11 @@
 [
   {
+    "role": "todoUser",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
     "role": "user",
     "resource": "User",
     "action": "read:own",
@@ -27,6 +33,12 @@
     "role": "user",
     "resource": "User",
     "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "todoUser",
+    "resource": "User",
+    "action": "delete:any",
     "attributes": "*"
   },
   {
@@ -98,6 +110,66 @@
   {
     "role": "user",
     "resource": "Task",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "todoUser",
+    "resource": "Auth",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Auth",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "todoUser",
+    "resource": "Auth",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Auth",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "todoUser",
+    "resource": "Auth",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Auth",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "todoUser",
+    "resource": "Auth",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Auth",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "todoUser",
+    "resource": "Auth",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Auth",
     "action": "read:any",
     "attributes": "*"
   }

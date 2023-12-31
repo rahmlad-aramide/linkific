@@ -13,6 +13,10 @@ import { TaskList } from "./task/TaskList";
 import { TaskCreate } from "./task/TaskCreate";
 import { TaskEdit } from "./task/TaskEdit";
 import { TaskShow } from "./task/TaskShow";
+import { AuthList } from "./auth/AuthList";
+import { AuthCreate } from "./auth/AuthCreate";
+import { AuthEdit } from "./auth/AuthEdit";
+import { AuthShow } from "./auth/AuthShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -52,6 +56,13 @@ const App = (): React.ReactElement => {
           edit={TaskEdit}
           create={TaskCreate}
           show={TaskShow}
+        />
+        <Resource
+          name="Auth"
+          list={AuthList}
+          edit={AuthEdit}
+          create={AuthCreate}
+          show={AuthShow}
         />
       </Admin>
     </div>
